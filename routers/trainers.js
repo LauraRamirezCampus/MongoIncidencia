@@ -1,5 +1,5 @@
 import {con} from "../db/atlas.js";
-import {limitGrt} from "../limit/config.js"
+import {limitGrt} from "../config/limit.js"
 import { Router } from "express";
 
 const appTrainer = Router();
