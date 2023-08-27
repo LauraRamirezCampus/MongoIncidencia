@@ -228,7 +228,7 @@ db.createCollection("usuario",{
                 pattern: "^[a-zA-Z ]+$"
             },
             rol: { 
-               enum:['admin','usuario']
+               enum:['lider','trainer']
             },
             permisos: { 
                 bsonType: 'object',
@@ -252,18 +252,18 @@ use("db_campus_incidencias");
 db.usuario.insertMany([
     {
      cc:123443,
-     nombre:"Juan",
-     rol:"usuario",
+     nombre:"Jholver",
+     rol:"lider",
      permisos:{
-        "/user":["1.0.0","2.0.0"]
+        "/trainer":["1.0.0","2.0.0"]
      }   
     },
     {
      cc:357897,
-     nombre:"Maria",
-     rol:"admin",
+     nombre:"Miguel",
+     rol:"trainer",
      permisos:{
-        "/user":["*"]
+        "/incidendias":["2.0.0"]
     }
     }
 ])
